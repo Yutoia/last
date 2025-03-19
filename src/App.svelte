@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { innerHeight, innerWidth } from "svelte/reactivity/window";
   import { getFontImportStyle } from "./lib/fonts";
   import RandomFontText from "./lib/RandomFontText.svelte";
 
@@ -75,8 +76,8 @@
               text="1年次. ReffectiveMinder (コンテスト提出作品)"
             />
             <iframe
-              width={window.innerWidth}
-              height={window.innerHeight}
+              width={innerWidth.current}
+              height={innerHeight.current}
               src="https://www.youtube-nocookie.com/embed/nVIFzZp7UWA?si=wxM-xwYySY-cIJSK"
               title="YouTube video player"
               frameborder="0"
@@ -92,7 +93,7 @@
           </div>
           <div class="relative grid h-full w-dvw place-content-center place-items-center">
             <RandomFontText tag="h3" class="absolute top-12 left-12 bg-white p-2" text="2年次. ascii-generator" />
-            <img src="/ascii.jpg" alt="ascii-generator" class="h-dvh" />
+            <img src="ascii.jpg" alt="ascii-generator" class="portrait:w-dvw landscape:h-dvh" />
             <RandomFontText
               tag="p"
               class="absolute bottom-28 bg-white p-2"
@@ -102,8 +103,8 @@
           <div class="relative grid h-full w-dvw place-content-center place-items-center">
             <RandomFontText tag="h3" class="absolute top-12 left-12 bg-white p-2" text="3年次. Numbers" />
             <iframe
-              width={window.innerWidth}
-              height={window.innerHeight}
+              width={innerWidth.current}
+              height={innerHeight.current}
               src="https://www.youtube-nocookie.com/embed/0h8InEPGUwk?si=K2wYZORy6VcTqrhm"
               title="YouTube video player"
               frameborder="0"
