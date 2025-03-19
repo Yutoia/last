@@ -101,7 +101,11 @@
             />
           </div>
           <div class="relative grid h-full w-dvw place-content-center place-items-center">
-            <RandomFontText tag="h3" class="absolute top-12 left-12 bg-white p-2" text="3年次. Numbers" />
+            <RandomFontText
+              tag="h3"
+              class="absolute top-12 left-12 bg-white p-2"
+              text="3年次. Numbers (コンテスト提出作品)"
+            />
             <iframe
               width={innerWidth.current}
               height={innerHeight.current}

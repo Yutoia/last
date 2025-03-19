@@ -6,11 +6,28 @@ const fontsJapanese = [
   "Rampart One",
   "Reggae One",
   "Stick",
+  //
+  "Zen Old Mincho",
+  "Kaisei Decol",
+  "Hachi Maru Pop",
+  "Kiwi Maru",
+  "Yuji Mai",
+  "Yusei Magic",
+  "Kaisei Tokumin",
+  "Hina Mincho"
 ];
 
 const fontsAscii = [
   //
   "Pacifico",
+  "Big Shoulders",
+  "Oswald",
+  "Tektur",
+  "Playfair Display",
+  "Babas Neue",
+  "Jaini",
+  "Dancing Script",
+  "Barriecito"
 ];
 
 export function getRandomFontFamilyFor(c: string): `font-family:"${string}"` {
